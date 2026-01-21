@@ -1,0 +1,203 @@
+/* ===== GENERAL PAGE STYLING ===== */
+.landing-page {
+  min-height: 100vh;
+  color: white;
+  background: linear-gradient(135deg, #020617, #0a1a3d, #1b0a4d);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 100px 20px 80px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-icon {
+  background: linear-gradient(135deg, #4f46e5, #7e22ce);
+  display: inline-block;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(111, 0, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  background: linear-gradient(to right, #60a5fa, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 26px;
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+.hero-desc {
+  font-size: 18px;
+  color: #94a3b8;
+  margin: 20px auto 50px;
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+.launch-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  border: none;
+  border-radius: 16px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 18px 36px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.5);
+}
+
+.launch-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+}
+
+/* ✅ Force full-screen fit */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Ensure the main wrapper uses full screen */
+.app-root, .app-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0b132b, #1c2541);
+  color: #fff;
+}
+
+/* Optional – center your hero section */
+.hero-section {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+
+/* ===== FEATURES SECTION ===== */
+.features-section {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(to right, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: 0.4s ease;
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.3);
+}
+
+.feature-icon {
+  font-size: 40px;
+  color: #60a5fa;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* ===== SIMULATOR PAGE ===== */
+.simulator-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #0a1a3d, #1b0a4d);
+  padding: 20px;
+  color: white;
+}
+
+.simulator-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.back-button {
+  background: linear-gradient(to right, #9333ea, #2563eb);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.back-button:hover {
+  background: linear-gradient(to right, #7e22ce, #1d4ed8);
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  text-align: center;
+  padding: 30px 10px;
+  color: #94a3b8;
+  font-size: 14px;
+}
